@@ -7,21 +7,21 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   // Get the input values
-  const eventId = form.elements.event-id.value;
+  const eventName = form.elements.event-name.value;
   const eventDate = form.elements.event-date.value;
   const name = form.elements.name.value;
   const email = form.elements.participant-email.value;
   const phone = form.elements.participant-phone.value;
 
   // Validate the input values
-  if (!eventId || !eventDate || !name || !email || !phone) {
+  if (!eventName || !eventDate || !name || !email || !phone) {
     alert('Please fill in all the fields.');
     return;
   }
 
   // Create a booking object
   const booking = {
-    eventId: event-id,
+    eventName: event-name,
     eventDate: event-date,
     name: name,
     email: participant-email,
