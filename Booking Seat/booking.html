@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Organization | Booking Seat</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Participants</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Book a Seat</h1>
+        <div>
+            <form action="form.php">
+                <div>
+                    <label for="event-id">Event ID:
+                        <input type="text" name="event-id" id="event-id" required></label>
+                </div>
+                <br>
+                <div>
+                    <label for="event-date">Event Date:
+                        <input type="date" name="event-date" id="event-date" required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="name">Name:
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="participant-email">Email:
+                        <input type="email" name="participant-email" id="participant-email" required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="participant-phone">Phone:
+                        <input type="text" name="participant-phone" id="participant-phone" required>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; ABC Organization.</p>
+    </footer>
+</body>
+
+</html>
