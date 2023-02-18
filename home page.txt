@@ -1,76 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
+<body background="event management.jpg"></body>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Organization | Booking Seat</title>
-    <link rel="stylesheet" href="booking.css">
+	<title>Event management</title>
+    <h1>Event management</h1>
+	<style>
+        p{
+            background-image: url('event management.jpg');
+        }
+		header {
+            text-align: center;
+            background-image: url('event management.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: #fff;
+			padding: 20px;
+		}
+        {
+            background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav li {
+			float: left;
+		}
+
+		nav li a {
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav li a:hover {
+			background-color: #111;
+		}
+
+		button {
+			background-color: #000095;
+			color: white;
+			padding: 14px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+
+		button:hover {
+			background-color: #457ba0;
+		}
+	</style>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Participants</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <h1>Book a Seat</h1>
-        <div>
-            <form action="form.php">
-                <div>
-                    <label for="event-name">Event Name:
-                        <select name="event-name" id="event-name">
-                            <option value="0">Select an Event</option>
-                            <option value="1">Music Festival</option>
-                            <option value="2">Business Conference</option>
-                            <option value="3">Hip-Hop Beginner Class</option>
-                        </select>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="event-date">Event Date:
-                        <input type="date" name="event-date" id="event-date" required>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="name">Name:
-                        <input type="text" name="name" id="name" required>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="participant-email">Email:
-                        <input type="email" name="participant-email" id="participant-email" required>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="participant-phone">Phone:
-                        <input type="text" name="participant-phone" id="participant-phone" required>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">Book Now</button>
-                </div>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; ABC Organization.</p>
-    </footer>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<button>View Event</button>
+		<button>Manage Event </button>
+		<button>Create Event</button>
+        <button>Search Event</button>
+	</header>
 </body>
-
 </html>
